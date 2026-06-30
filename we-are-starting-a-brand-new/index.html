@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ahead is a premium budgeting, planning, and decision-support platform."
+    />
+    <title>Ahead | Financial Planning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=9" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Primary navigation">
+        <a class="brand" href="#dashboard" aria-label="Ahead dashboard">
+          <span class="brand-mark">A</span>
+          <span>
+            <strong>Ahead</strong>
+            <small>A TFLC Product</small>
+          </span>
+        </a>
+
+        <nav class="nav-list" id="desktopNav"></nav>
+
+        <div class="sidebar-card">
+          <span class="eyebrow">Ahead status</span>
+          <strong>21 days covered</strong>
+          <p>Your plan stays funded through the next bill cycle.</p>
+        </div>
+      </aside>
+
+      <div class="mobile-topbar">
+        <a class="brand" href="#dashboard" aria-label="Ahead dashboard">
+          <span class="brand-mark">A</span>
+          <span>
+            <strong>Ahead</strong>
+            <small>A TFLC Product</small>
+          </span>
+        </a>
+        <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle dark mode">
+          <span aria-hidden="true">D</span>
+        </button>
+      </div>
+
+      <main class="main-content">
+        <header class="page-header">
+          <div>
+            <span class="eyebrow" id="pageEyebrow">Ahead clarity view</span>
+            <h1 id="pageTitle">Dashboard</h1>
+            <p id="pageSubtitle">Where do I stand today?</p>
+          </div>
+          <div class="header-actions">
+            <button class="ghost-button" type="button">Export view</button>
+            <button class="primary-button" type="button">Plan next move</button>
+          </div>
+        </header>
+
+        <section id="screen" class="screen" aria-live="polite"></section>
+      </main>
+
+      <nav class="bottom-nav" id="mobileNav" aria-label="Mobile navigation"></nav>
+    </div>
+
+    <script src="local-data.js?v=2"></script>
+    <script src="budget-engine.js?v=1"></script>
+    <script src="decision-engine.js?v=8"></script>
+    <script src="timeline-engine.js?v=1"></script>
+    <script src="app.js?v=13"></script>
+  </body>
+</html>
